@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2/04/2019 12:57:23 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.Grupo" table="grupo" catalog="ejercicio_hibernate" optimistic-lock="version">
+        <id name="cveGru" type="string">
+            <column name="CveGru" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="nomGru" type="string">
+            <column name="NomGru" length="50" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
